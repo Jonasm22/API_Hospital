@@ -11,7 +11,7 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Builder
-@Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "user")) // corregir columnames
+@Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "username")) // corregir columnames
 //@Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "FK_person_id")) // corregir columnames
 public class User {
     @Id
@@ -19,7 +19,7 @@ public class User {
     private Long id;
 
     @Column(nullable = false)
-    private String user;
+    private String username;
 
     @Column(nullable = false)
     private String password;
