@@ -1,7 +1,7 @@
 package com.example.hospitalapi.DTO.request;
 
 import com.example.hospitalapi.Model.Role;
-import com.example.hospitalapi.Model.State;
+import com.example.hospitalapi.Model.Status;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -20,7 +20,7 @@ public class PatientRequestDTO {
     private Role role;
 
     @NotNull(message = "State is required")
-    private State state;
+    private Status status;
 
 }
 

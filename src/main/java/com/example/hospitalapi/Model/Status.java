@@ -1,6 +1,6 @@
 package com.example.hospitalapi.Model;
 
-public enum State {
+public enum Status {
     ACTIVE,
     INACTIVE,
     PENDING,

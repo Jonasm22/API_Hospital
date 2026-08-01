@@ -1,7 +1,6 @@
-package com.example.hospitalapi.repository;
+package com.example.hospitalapi.Repository;
 
 import com.example.hospitalapi.Model.Person;
-import com.example.hospitalapi.Model.State;
 import com.example.hospitalapi.Model.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

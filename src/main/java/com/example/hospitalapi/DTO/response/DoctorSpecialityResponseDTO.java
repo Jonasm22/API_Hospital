@@ -1,6 +1,5 @@
 package com.example.hospitalapi.DTO.response;
 
-import com.example.hospitalapi.Model.Employee;
 import lombok.*;
 
 @Getter
@@ -12,6 +11,6 @@ import lombok.*;
 public class DoctorSpecialityResponseDTO {
     private Long id;
     private EmployeeResponseDTO employeeResponseDTO;
-    private SpecialityResponsetDTO specialityResponsetDTO;
+    private SpecialityResponseDTO specialityResponseDTO;
 }
 

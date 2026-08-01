@@ -1,7 +1,7 @@
 package com.example.hospitalapi.DTO.request;
 
 import com.example.hospitalapi.Model.Employee;
-import com.example.hospitalapi.Model.State;
+import com.example.hospitalapi.Model.Status;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -28,6 +28,6 @@ public class MedicalRecordRequestDTO {
     private Employee employeeId;
 
     @NotNull(message = "State of the medical record is required")
-    private State state;
+    private Status status;
 
 }

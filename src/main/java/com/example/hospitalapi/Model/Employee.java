@@ -27,7 +27,7 @@ public class Employee {
     private Role role;
 
     @Enumerated(EnumType.STRING)
-    private State state;
+    private Status status;
 
     @OneToMany(mappedBy = "employee",cascade = CascadeType.ALL,orphanRemoval = true)
     private Set<MedicalSpecialty> specialties = new HashSet<>();

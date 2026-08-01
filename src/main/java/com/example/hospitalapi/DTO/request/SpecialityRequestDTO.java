@@ -1,6 +1,7 @@
 package com.example.hospitalapi.DTO.request;
 
-import com.example.hospitalapi.Model.State;
+
+import com.example.hospitalapi.Model.Status;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -17,7 +18,7 @@ public class SpecialityRequestDTO {
     private String user;
 
     @NotNull(message = "State is required")
-    private State state;
+    private Status status;
 
 
 }

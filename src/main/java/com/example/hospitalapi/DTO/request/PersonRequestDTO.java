@@ -1,6 +1,6 @@
 package com.example.hospitalapi.DTO.request;
 
-import com.example.hospitalapi.Model.State;
+import com.example.hospitalapi.Model.Status;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -21,7 +21,7 @@ public class PersonRequestDTO {
     private  String email;
 
     @NotNull(message = "State required")
-    private State state;
+    private Status status;
 
 }
 

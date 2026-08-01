@@ -1,7 +1,7 @@
-package com.example.hospitalapi.repository;
+package com.example.hospitalapi.Repository;
 
 import com.example.hospitalapi.Model.Person;
-import com.example.hospitalapi.Model.State;
+import com.example.hospitalapi.Model.Status;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -17,7 +17,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
     @Query("SELECT p FROM Person p WHERE LOWER(p.name) LIKE LOWER(CONCAT('%', :name, '%'))")
     Page<Person> searchByName(@Param("name") String name, Pageable pageable);
 
-    Page<Person> findByState(State state, Pageable pageable);
+    Page<Person> findByStatus(Status status, Pageable pageable);
 
     Optional<Person> findByEmail(String email);
 }

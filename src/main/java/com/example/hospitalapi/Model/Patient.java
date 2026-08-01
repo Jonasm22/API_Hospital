@@ -29,7 +29,7 @@ public class Patient {
     private Role role;
 
     @Enumerated(EnumType.STRING)
-    private State state;
+    private Status status;
 
 
 

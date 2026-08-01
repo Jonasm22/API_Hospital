@@ -1,8 +1,8 @@
 package com.example.hospitalapi.DTO.response;
 
-import com.example.hospitalapi.Model.Role;
 import com.example.hospitalapi.Model.Status;
 import lombok.*;
+
 
 @Getter
 @Setter
@@ -10,10 +10,10 @@ import lombok.*;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-public class PatientResponseDTO {
+public class SpecialityResponseDTO {
     private Long id;
-    private Role role;
+    private String name;
     private Status status;
-    private PersonResponseDTO personResponseDTO;
+
 }
 

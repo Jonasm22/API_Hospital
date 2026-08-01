@@ -1,4 +1,4 @@
-package com.example.hospitalapi.repository;
+package com.example.hospitalapi.Repository;
 
 import com.example.hospitalapi.Model.Employee;
 import com.example.hospitalapi.Model.Person;

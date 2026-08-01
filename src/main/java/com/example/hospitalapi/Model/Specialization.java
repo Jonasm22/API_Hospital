@@ -24,7 +24,7 @@ public class Specialization {
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
-    private State state;
+    private Status status;
 
     @OneToMany(mappedBy = "specialization", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<MedicalSpecialty> employee = new HashSet<>();

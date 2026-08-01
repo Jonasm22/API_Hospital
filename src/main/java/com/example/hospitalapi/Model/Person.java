@@ -26,7 +26,7 @@ public class Person {
     private  String email;
 
     @Enumerated(EnumType.STRING)
-    private State state;
+    private Status status;
 
 
 }

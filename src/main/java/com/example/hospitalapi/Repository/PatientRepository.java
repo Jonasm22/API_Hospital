@@ -1,8 +1,8 @@
-package com.example.hospitalapi.repository;
+package com.example.hospitalapi.Repository;
 
 import com.example.hospitalapi.Model.Patient;
 import com.example.hospitalapi.Model.Person;
-import com.example.hospitalapi.Model.State;
+import com.example.hospitalapi.Model.Status;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -21,9 +21,9 @@ public interface PatientRepository extends JpaRepository<Patient, Long> {
 
  */
 
-    List<Patient> findByState(State state);
+    List<Patient> findByStatus(Status status);
 
-    Page<Patient> findByState(State state, Pageable pageable);
+    Page<Patient> findByStatus(Status status, Pageable pageable);
 
     boolean existsByPerson(Person person);
 
