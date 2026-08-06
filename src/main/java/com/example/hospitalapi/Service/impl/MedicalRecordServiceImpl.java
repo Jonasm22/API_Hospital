@@ -18,20 +18,20 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 @RequiredArgsConstructor
-@Slf4j // que es
+@Slf4j // Annotation to create a logger to log information
 @Service
 public class MedicalRecordServiceImpl implements MedicalRecordService {
 
-    //Por que?
+    //Service Logic
     private final MedicalRecordRepository medicalRecordRepository;
     private final PatientRepository patientRepository;
     private final EmployeeRepository employeeRepository;
-    private final MedicalRecordMapper medicalRecordMapper; //Extract Mapper
+    private final MedicalRecordMapper medicalRecordMapper; //Extract Mapper porque
 
 
 
     @Override
-    @Transactional // que hace transactiona como podria explicarse teoricamente y en el methodo
+    @Transactional //Executes method operations within a single database transaction (Rolls back on error)
     public MedicalRecordResponseDTO createMedicalReport(MedicalRecordResponseDTO responseDTO) {
 
         if(responseDTO.getAppointmentDate() == null) {
